@@ -17,9 +17,9 @@ body {
 }
 
 .hr {
-    height: 1px;
+    height: 2px;
     background-color: black;
-    width: 30%;
+    width: 25%;
 }
 
 .card-image {
@@ -73,13 +73,14 @@ body {
 }
 
 .links-redes-sociais {
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 .links-redes-sociais i { 
     color: black;
     font-size: 25px;
-    padding: 16px;
+    padding: 14px;
 }
 
 #footer-elementos {
@@ -91,7 +92,22 @@ body {
     padding: 15px 0px 15px 0px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .siga {
+    display: flex;
+    justify-content: center;
+}
+
+.telefone {
+    display: flex;
+    justify-content: left;
+}
+
+.email {
     display: flex;
     justify-content: center;
 }
@@ -108,7 +124,7 @@ body {
     display: flex;
      justify-content: center;
     }
-}
+
 
 #texto-1 {
 
