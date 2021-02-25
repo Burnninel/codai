@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codaí</title>
-    <link rel ="preconnect" href ="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <div class="container-fluid container-linear">
         <div class="row  container-card">
@@ -19,62 +22,71 @@
                         <img src="./image/image.png" alt="Foto do perfil" class="card-image mx-auto d-blok">
                     </div>
                     <div class="card-body">
-                       <h5 class="text-center card-title">Bruno Ismael</h5>
-                       <hr class="hr">
-                       <p class="text-center">
+                        <h5 class="text-center card-title" id="nome-no-html">
+                            Bruno Ismael
+                        </h5>
+                        <hr class="hr">
+                        <p class="text-center" id="cargo-no-html">                
                             Desenvolvedor
-                       </p>
-                       <div class="botoes-card">
-                             <a href="#" class="btn mr-1" id="btn-sobre">Sobre</a>
-                             <a href="#" class="btn ml-1 btn-card" id="btn-projeto">Projetos</a>
-                         </div>
-                         <div class="icon-redes-sociais">
-                             <div class="links-redes-sociais mt-2">
-                                  <a href="#">
-                                        <i class="fab fa-facebook"></i>
-                                  </a>
-                                  <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                  </a>
-                                  <a href="#">
-                                        <i class="fab fa-linkedin"></i>
-                                  </a>
-                                  <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                  </a>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
+                        </p>
+                        <div class="botoes-card" style="text-align: center;">
+                                <button onclick="clickNoSobre()" class="btn mr-2" id="btn-sobre">Sobre</button>
+                                <button onclick="clickNoProjeto()" class="btn ml-1 btn-card" id="btn-projeto">Projetos</button>
+                        </div>
+                        <div class="icon-redes-sociais">
+                            <div class="links-redes-sociais mt-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-6 text-body">
-                <div class="text">
+            <div class="col-md-6 col-lg-5 text-body">
+                <div class="text" id="texto-1">
                     <h1 class="title-text">Olá</h1>
                     <h4 class="title-subtitle">bem vindo ao meu currículo</h4>
                     <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet vestibulum molestie. Vivamus autor tempus urna, ut tempor lígula dignissim at.
+                        EU me chamo Bruno, tenho 19 anos, sou natural de Igrejinha-RS e sou graduante em Engenharia de software na universidade Cruzeiro do Sul (UNIFRAN).
                     </p>
                     <p>
-                     Lores ipsum dolor sit amet, censectur adipiscing elit. Nullam imperdiet vestibulum molestie. 
+                        Eu ecolhi pela programação pela enorme curiosidade que eu tinha quando eu era menor. Desde sempre quis saber como eram feitos os aplicativos, jogos e sites, na verdade, eu queria saber como cada coisa foi inventada,  como televisores, celulares, computadores, os videogames, e seus softwares. E agora que conheço um pouco mais me dedico ao maximo para dominar todas as tecnicas de programação e me tornar um developer de sucesso.
+                    </p>
+                </div>
+                <div class="text" id="texto-2">
+                    <h1 class="title-text">Projetos</h1>
+                    <h4 class="title-subtitle">Meu primeiro projeto</h4>
+                    <p>
+                       <p> Este aqui está sendo o primeiro website que eu fiz, e também mmeu primeiro contato com a programação, mas a meta é sair muitos projetos daqui para frente!</p>
                     </p>
                 </div>
             </div>
         </div>
     </div>
-   <footer class="container">
+    <footer class="container">
         <div class="row" id="footer-elementos">
             <div class="col-md-3 col-lg-3">
-               <h4>Telefone</h4>
-               <p>(51) 99612-6725</p>
+                <h4 class="telefone">Telefone</h4>
+                <p>(51) 99612-6725</p>
             </div>
-            <div class="col-md-3 col-lg-3">
-                <div class="email">
-                    <h4>E-mail</h4>
+            <div class="col-md-3 col-lg-2">
+                <div>
+                    <h4 class="email">E-mail</h4>
                     <p>brunoabc11@gmail.com</p>
-                </div>      
+                </div>
             </div>
-            <div class="col-md-3 col-lg-3">
-                <h4>Siga</h4>
+            <div class="col-md-3 col-lg-5">
+                <h4 class="siga">Siga</h4>
                 <div class="links-redes-sociais">
                     <a href="#">
                         <i class="fab fa-facebook"></i>
@@ -90,12 +102,15 @@
                     </a>
                 </div>
             </div>
-        </div> 
-        <div class="row text-center mb-2 ">
-            <div class="col-lg-12 com-md-12">
-                <small>2020 <a href="#">Growdev</a> </small>
-            </div>   
         </div>
-   </footer>
+        <div class="row text-center mb-2 ">
+            <div class="col-lg-10 com-md-12">
+                <small>₢2020 gowdev. All rights reserved <a href="#">Growdev</a> </small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./css/js/index.js"></script>
 </body>
+
 </html>
