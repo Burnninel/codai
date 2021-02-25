@@ -1,6 +1,5 @@
 body {
-    background-color: #F5F5F5;
-
+    background-color: #FFF;
 }
 
 .container-card {
@@ -31,7 +30,7 @@ body {
 }
 
 .card-perfil {
-    background-color: #19DEF0 !important;
+    background-color: #ffffff !important;
     box-shadow: -10px 5px 20px 0px #292A2D;
 }
 
@@ -80,7 +79,7 @@ body {
 .links-redes-sociais i { 
     color: black;
     font-size: 25px;
-    padding: 10px;
+    padding: 16px;
 }
 
 #footer-elementos {
@@ -92,44 +91,29 @@ body {
     padding: 15px 0px 15px 0px;
 }
 
-@media(min-wight: 900px) {
+.siga {
+    display: flex;
+    justify-content: center;
+}
 
-    .container-linear {
-        background: linear-gradient(to left, #fff 60%, #19DEF0 40%);
+.container-linear {
+        background: linear-gradient(to left, #FFF 60%, #19DEF0 40%);
     }
 
-    .card-col {
-        display: flex;
-        justify-content: flex-end;
-        align-content: center;
-        background-color: #fff !important;
-        box-shadow: -10px 5px 10px 0px #292A2D;
-    }
-
-    .card-perfil {
-        background-color: #fff !important;
-        color: #292A2D;
-        box-shadow: none !important;
-        width: 18em;
-        border: none !important;
-    }
-
-    .btn-card {
+.btn-card {
         color: black !important;
     }
 
-    .text-body {
-        box-shadow: none;
+#footer-elementos {
+    display: flex;
+     justify-content: center;
     }
+}
 
-    .text {
-        max-width: 430px;
-        vertical-align: middle;
-        margin-top: 2em
-    }
+#texto-1 {
 
-    #footer-elementos {
-        display: flex;
-        justify-content: center !important;
-    }
+}
+
+#texto-2 {
+    display: none;
 }
